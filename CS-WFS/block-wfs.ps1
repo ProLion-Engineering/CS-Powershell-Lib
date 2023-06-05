@@ -121,7 +121,7 @@ foreach ($share in $localshares) {
 
             if ($username -notin $BlockedUsers.items.username) {
 
-                Unblock-SmbShareAccess -name $share.name -AccountName $username -Force
+                Unblock-SmbShareAccess -name $share.name -AccountName $Deny.AccountName -Force
 
             }
 
